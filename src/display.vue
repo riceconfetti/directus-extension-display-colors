@@ -1,10 +1,18 @@
-<script setup>
+<script>
 import "./app.css";
-
-const props = defineProps(["value", "interface", "type", "collection"]);
-
-let colors = JSON.parse(props.value.value);
-console.log(props.value);
+export default {
+  props: {
+    value: {
+      type: String,
+      default: null,
+    },
+  },
+  data() {
+    return {
+      colors: JSON.parse(this.value),
+    };
+  },
+};
 </script>
 
 <template>
