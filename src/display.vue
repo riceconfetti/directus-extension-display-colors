@@ -7,11 +7,6 @@ export default {
       default: null,
     },
   },
-  data() {
-    return {
-      colors: JSON.parse(this.value),
-    };
-  },
 };
 </script>
 
@@ -19,7 +14,7 @@ export default {
   <div class="flex gap-1 p-2 flex-wrap w-full h-full">
     Value
     <span
-      v-for="color in colors"
+      v-for="color in value"
       class="rounded-full min-h-full size-4 flex bg-(--color-bg)"
       :style="{ '--color-bg': color.css }"
     />
