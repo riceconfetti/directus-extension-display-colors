@@ -1,5 +1,6 @@
 import { defineInterface } from "@directus/extensions-sdk";
 import DisplayComponent from "./display.vue";
+import "./app.css";
 
 export default defineInterface({
   id: "directus-extension-display-colors",

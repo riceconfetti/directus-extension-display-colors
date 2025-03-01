@@ -1,5 +1,4 @@
 <script>
-import "./app.css";
 export default {
   props: {
     value: {
@@ -20,14 +19,32 @@ export default {
 </script>
 
 <template>
-  <div class="flex gap-1 p-2 flex-wrap w-full h-full">
+  <div class="palette">
     <!-- Value {{ value[0].css }} -->
-    <span
+    <div
       v-for="color in value"
-      class="rounded-full min-h-full size-4 flex bg-(--color-bg)"
+      class="color"
       :style="{ '--color-bg': color.css }"
     />
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.palette {
+  container-type: size;
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.color {
+  border-radius: 100%;
+  overflow: hidden;
+  aspect-ratio: 1;
+  width: 100cqh;
+  background-color: var(--color-bg);
+  display: flex;
+}
+</style>
