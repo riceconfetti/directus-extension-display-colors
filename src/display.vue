@@ -21,12 +21,12 @@ export default {
 
 <template>
   <div class="flex gap-1 p-2 flex-wrap w-full h-full">
-    Value {{ value[0].css }}
-    <!-- <span
-      v-for="color in colors"
+    <!-- Value {{ value[0].css }} -->
+    <span
+      v-for="color in value"
       class="rounded-full min-h-full size-4 flex bg-(--color-bg)"
       :style="{ '--color-bg': color.css }"
-    /> -->
+    />
   </div>
 </template>
 
