@@ -1,4 +1,5 @@
 <script setup>
+import './app.css'
 defineProps(["colors"]);
 </script>
 
@@ -7,7 +8,7 @@ defineProps(["colors"]);
     <span
       v-for="color in colors"
       class="rounded-full min-h-full size-4 flex"
-      :style="'background:' + color.hex"
+      :style="'background:' + color.css"
     />
   </div>
 </template>
