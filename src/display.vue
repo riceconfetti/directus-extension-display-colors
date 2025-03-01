@@ -1,6 +1,8 @@
 <script setup>
 import './app.css'
-defineProps(["colors"]);
+defineProps(["value"]);
+
+let colors = JSON.parse(value)
 </script>
 
 <template>
