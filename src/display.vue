@@ -1,14 +1,14 @@
 <script setup>
 import "./app.css";
 
-defineProps({
+const props = defineProps({
   value: {
     type: String,
     default: null,
   },
 });
 
-let colors = JSON.parse(value);
+let colors = JSON.parse(props.value.value);
 </script>
 
 <template>
