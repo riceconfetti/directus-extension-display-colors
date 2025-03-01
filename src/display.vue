@@ -33,7 +33,6 @@ export default {
 .palette {
   container-type: size;
   display: flex;
-  padding: 0.5rem;
   gap: 0.25rem;
   flex-wrap: wrap;
   width: 100%;
