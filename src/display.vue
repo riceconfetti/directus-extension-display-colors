@@ -9,7 +9,7 @@ export default {
   },
   data() {
     let colors;
-    if (value != null && value != undefined) {
+    if (this.value != null && this.value != undefined) {
       colors = JSON.parse(this.value);
     } else {
       colors = [];
