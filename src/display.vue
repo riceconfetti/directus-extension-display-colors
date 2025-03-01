@@ -1,14 +1,10 @@
 <script setup>
 import "./app.css";
 
-const props = defineProps({
-  value: {
-    type: String,
-    default: null,
-  },
-});
+const props = defineProps(["value", "interface", "type", "collection"]);
 
 let colors = JSON.parse(props.value.value);
+console.log(props.value);
 </script>
 
 <template>
@@ -21,3 +17,5 @@ let colors = JSON.parse(props.value.value);
     />
   </div>
 </template>
+
+<style></style>
